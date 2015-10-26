@@ -19,6 +19,3 @@ DEVICE_PACKAGE_OVERLAYS := vendor/lge/geehrc/overlay
 
 # Blobs
 $(call inherit-product, vendor/lge/geehrc/geehrc-vendor-blobs.mk)
-
-# Additional blobs
-$(call inherit-product, vendor/lge/geehrc/geehrc-vendor-additional-blobs.mk)
