@@ -32,6 +32,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/usbhub_init:system/bin/usbhub_init \
 	$(LOCAL_PATH)/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app
 
+# system/etc/
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/etc/DxHDCP.cfg:system/etc/DxHDCP.cfg
+
 # system/etc/firmware
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/etc/firmware/tzapps.b00:system/etc/firmware/tzapps.b00 \
@@ -87,6 +91,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/libdsutils.so:system/lib/libdsutils.so \
 	$(LOCAL_PATH)/lib/libgemini.so:system/lib/libgemini.so \
 	$(LOCAL_PATH)/lib/libgps.utils.so:system/lib/libgps.utils.so \
+	$(LOCAL_PATH)/lib/libDxHdcp.so:system/lib/libDxHdcp.so \
 	$(LOCAL_PATH)/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
 	$(LOCAL_PATH)/lib/libidl.so:system/lib/libidl.so \
 	$(LOCAL_PATH)/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
