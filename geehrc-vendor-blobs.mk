@@ -218,7 +218,14 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
 	$(LOCAL_PATH)/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
 	$(LOCAL_PATH)/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-	$(LOCAL_PATH)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so
+	$(LOCAL_PATH)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
+	$(LOCAL_PATH)/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+	$(LOCAL_PATH)/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+	$(LOCAL_PATH)/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
+
+# system/vendor/lib/drm
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
 
 # system/vendor/lib/egl
 PRODUCT_COPY_FILES += \
@@ -228,6 +235,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
 	$(LOCAL_PATH)/vendor/lib/egl/libplayback_adreno.so:system/vendor/lib/egl/libplayback_adreno.so \
 	$(LOCAL_PATH)/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so
+
+# system/vendor/lib/mediadrm
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # system/vendor/firmware
 PRODUCT_COPY_FILES += \
